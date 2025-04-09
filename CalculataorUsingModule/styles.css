@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#calculate {
+    width: 100%;
+    background-color: #2196F3;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#calculate:hover {
+    background-color: #0b7dda;
+}
+
+#operatorDisplay, #resultDisplay {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+#add, #sub, #mul, #div {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/* Highlight selected operator */
+button.selected {
+    background-color: #ff9800;
+}
+
+button.selected:hover {
+    background-color: #e68a00;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    #add, #sub, #mul, #div {
+        width: 40px;
+        height: 40px;
+    }
+}

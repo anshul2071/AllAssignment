@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md mx-auto">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Simple Calculator</h1>
+        
+        <div class="mb-4">
+            <label for="num1" class="block text-gray-700 font-medium mb-2">First Number:</label>
+            <input type="number" id="num1" placeholder="Enter First Number" 
+                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        
+        <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2">Operation:</label>
+            <div class="flex space-x-2">
+                <button id="add" class="w-12 h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white text-xl font-bold rounded-md transition-colors">+</button>
+                <button id="sub" class="w-12 h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white text-xl font-bold rounded-md transition-colors">-</button>
+                <button id="mul" class="w-12 h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white text-xl font-bold rounded-md transition-colors">×</button>
+                <button id="div" class="w-12 h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white text-xl font-bold rounded-md transition-colors">/</button>
+            </div>
+            <p id="operatorDisplay" class="mt-2 text-gray-700 font-medium">Selected Operator: None</p>
+        </div>
+        
+        <div class="mb-6">
+            <label for="num2" class="block text-gray-700 font-medium mb-2">Second Number:</label>
+            <input type="number" id="num2" placeholder="Enter Second Number" 
+                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        
+        <button id="calculate" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-md transition-colors">
+            Calculate
+        </button>
+        
+        <p id="resultDisplay" class="mt-4 text-lg font-semibold text-gray-800">Result: N/A</p>
+    </div>
+
+    <script type="module" src="calculator.js"></script>
+</body>
+</html>
